@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,21 +21,50 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUI-px-nx0">
-                                <rect key="frame" x="320" y="607" width="39" height="40"/>
+                                <rect key="frame" x="265" y="420" width="39" height="40"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" red="0.20362231135368347" green="0.14794594049453735" blue="0.045762099325656891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-9m-sSD" userLabel="GameButtonsView">
+                                <rect key="frame" x="56" y="136" width="208" height="208"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTv-fw-bPD">
+                                        <rect key="frame" x="8" y="8" width="99.5" height="99.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" red="0.20362231135368347" green="0.14794594049453735" blue="0.045762099325656891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="NTv-fw-bPD" firstAttribute="leading" secondItem="Mzs-9m-sSD" secondAttribute="leading" constant="8" id="1xb-V4-fsF"/>
+                                    <constraint firstItem="NTv-fw-bPD" firstAttribute="height" secondItem="Mzs-9m-sSD" secondAttribute="height" multiplier="0.48" id="Cdl-yf-VNl"/>
+                                    <constraint firstItem="NTv-fw-bPD" firstAttribute="width" secondItem="Mzs-9m-sSD" secondAttribute="width" multiplier="0.48" id="awl-i5-OGh"/>
+                                    <constraint firstItem="NTv-fw-bPD" firstAttribute="top" secondItem="Mzs-9m-sSD" secondAttribute="top" constant="8" id="e2A-6J-oHf"/>
+                                    <constraint firstAttribute="width" secondItem="Mzs-9m-sSD" secondAttribute="height" multiplier="1:1" id="qyq-HJ-8Kg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Mzs-9m-sSD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="3Sa-eK-Ltd"/>
+                            <constraint firstItem="Mzs-9m-sSD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AWx-LM-hmh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iUI-px-nx0" secondAttribute="trailing" id="Kgl-nV-qzF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iUI-px-nx0" secondAttribute="bottom" constant="20" id="LXV-Kb-Qdo"/>
+                            <constraint firstItem="Mzs-9m-sSD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vK2-Dl-XCe"/>
                         </constraints>
                     </view>
                 </viewController>

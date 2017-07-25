@@ -15,6 +15,7 @@
 		0AAA893F1F25A25E006BF043 /* Test_Driven_DesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA893E1F25A25E006BF043 /* Test_Driven_DesignUITests.swift */; };
 		0AAA894D1F25A340006BF043 /* MyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA894C1F25A340006BF043 /* MyTests.swift */; };
 		0AAA894F1F25A729006BF043 /* MyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA894E1F25A729006BF043 /* MyCode.swift */; };
+		0AAA89511F26EF69006BF043 /* MyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA89501F26EF69006BF043 /* MyExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0AAA89401F25A25E006BF043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AAA894C1F25A340006BF043 /* MyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTests.swift; sourceTree = "<group>"; };
 		0AAA894E1F25A729006BF043 /* MyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCode.swift; sourceTree = "<group>"; };
+		0AAA89501F26EF69006BF043 /* MyExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0AAA89271F25A25E006BF043 /* LaunchScreen.storyboard */,
 				0AAA892A1F25A25E006BF043 /* Info.plist */,
 				0AAA894E1F25A729006BF043 /* MyCode.swift */,
+				0AAA89501F26EF69006BF043 /* MyExtensions.swift */,
 			);
 			path = "Test Driven Design";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				0AAA89211F25A25E006BF043 /* ViewController.swift in Sources */,
 				0AAA894F1F25A729006BF043 /* MyCode.swift in Sources */,
 				0AAA891F1F25A25E006BF043 /* AppDelegate.swift in Sources */,
+				0AAA89511F26EF69006BF043 /* MyExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
