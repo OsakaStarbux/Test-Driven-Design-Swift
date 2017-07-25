@@ -19,8 +19,8 @@ import XCTest
     testExample
     testPerformanceExample
  
-    The setUp and tearDown prepare the test and clean up afterwards,
-    and are run every time for each test you write in this set.
+    The setUp and tearDown prepare the test and clean up afterwards.
+    They are run every time for each test you write in this set.
  
     The testExample and testPerformanceExample are examples of different types of tests you can write
  
