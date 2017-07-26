@@ -1,14 +1,14 @@
 //
-//  Test_Driven_DesignUITests.swift
-//  Test Driven DesignUITests
+//  ViewControllerUITests.swift
+//  Test Driven Design
 //
-//  Created by Kevin Bradley on 2017/07/24.
+//  Created by Kevin Bradley on 2017/07/25.
 //  Copyright © 2017 Kevin Bradley. All rights reserved.
 //
 
 import XCTest
 
-class Test_Driven_DesignUITests: XCTestCase {
+class ViewControllerUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -28,9 +28,10 @@ class Test_Driven_DesignUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTapNumberButtonIncrementsScore() {
+        XCUIApplication().buttons["0"].tap()
+        let newScore = XCUIApplication().buttons["1"].label
+        XCTAssertEqual(newScore, "1")
     }
     
 }

@@ -12,10 +12,10 @@
 		0AAA89241F25A25E006BF043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA89221F25A25E006BF043 /* Main.storyboard */; };
 		0AAA89261F25A25E006BF043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA89251F25A25E006BF043 /* Assets.xcassets */; };
 		0AAA89291F25A25E006BF043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA89271F25A25E006BF043 /* LaunchScreen.storyboard */; };
-		0AAA893F1F25A25E006BF043 /* Test_Driven_DesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA893E1F25A25E006BF043 /* Test_Driven_DesignUITests.swift */; };
 		0AAA894D1F25A340006BF043 /* MyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA894C1F25A340006BF043 /* MyTests.swift */; };
 		0AAA894F1F25A729006BF043 /* MyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA894E1F25A729006BF043 /* MyCode.swift */; };
 		0AAA89511F26EF69006BF043 /* MyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA89501F26EF69006BF043 /* MyExtensions.swift */; };
+		0AAA89531F2748F1006BF043 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA89521F2748F1006BF043 /* ViewControllerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +46,11 @@
 		0AAA892F1F25A25E006BF043 /* Test Driven DesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test Driven DesignTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAA89351F25A25E006BF043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AAA893A1F25A25E006BF043 /* Test Driven DesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test Driven DesignUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AAA893E1F25A25E006BF043 /* Test_Driven_DesignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Driven_DesignUITests.swift; sourceTree = "<group>"; };
 		0AAA89401F25A25E006BF043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AAA894C1F25A340006BF043 /* MyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTests.swift; sourceTree = "<group>"; };
 		0AAA894E1F25A729006BF043 /* MyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCode.swift; sourceTree = "<group>"; };
 		0AAA89501F26EF69006BF043 /* MyExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExtensions.swift; sourceTree = "<group>"; };
+		0AAA89521F2748F1006BF043 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +125,8 @@
 		0AAA893D1F25A25E006BF043 /* Test Driven DesignUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0AAA893E1F25A25E006BF043 /* Test_Driven_DesignUITests.swift */,
 				0AAA89401F25A25E006BF043 /* Info.plist */,
+				0AAA89521F2748F1006BF043 /* ViewControllerUITests.swift */,
 			);
 			path = "Test Driven DesignUITests";
 			sourceTree = "<group>";
@@ -209,6 +209,7 @@
 					};
 					0AAA89391F25A25E006BF043 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0AAA891A1F25A25E006BF043;
 					};
@@ -285,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AAA893F1F25A25E006BF043 /* Test_Driven_DesignUITests.swift in Sources */,
+				0AAA89531F2748F1006BF043 /* ViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,10 +479,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Test Driven DesignUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevbradley.Test-Driven-DesignUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Test Driven Design";
 			};
@@ -491,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Test Driven DesignUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevbradley.Test-Driven-DesignUITests";

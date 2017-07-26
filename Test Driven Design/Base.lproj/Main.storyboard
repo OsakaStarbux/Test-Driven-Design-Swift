@@ -51,6 +51,9 @@
                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gxT-Rf-0tH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTX-dl-uy7">
                                         <rect key="frame" x="337" y="0.0" width="311" height="311"/>
@@ -137,6 +140,9 @@
                             <constraint firstItem="Mzs-9m-sSD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vK2-Dl-XCe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberButton" destination="NTv-fw-bPD" id="eca-aA-woE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

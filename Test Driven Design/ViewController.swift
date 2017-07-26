@@ -12,6 +12,18 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    
+    
+    var currentNumber = 0
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+            updateButtonTitle()
+    }
+    
+    
+    @IBOutlet weak var numberButton: UIButton!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,5 +36,12 @@ class ViewController: UIViewController {
     }
 
 
+    func updateButtonTitle() {
+        currentNumber += 1
+        numberButton.setTitle(String(currentNumber), for: .normal)
+    
+    }
+    
+    
 }
 
